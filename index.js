@@ -28,7 +28,7 @@ window.onload = () => {
   const distText = document.querySelector("#dist");
 
   entity.flushToDOM();
-  console.log(n);
+  console.log("[DEBUG] :: ", { entity });
   const distanceMsg = entity.getAttribute("distanceMsg");
   distText.innerHTML = `Distance: ${distanceMsg}meters`;
   AFRAME.registerComponent("model", {
